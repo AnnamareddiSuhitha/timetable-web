@@ -1,0 +1,2637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Indore Timetable App</title>
+    <link rel="stylesheet" href="timetable.css">
+    <script src="timetable.js"></script>
+</head>
+<body><div class="container">
+    <h1>  
+        <img src="Screenshot 2024-01-28 163247.png" class="logo">
+        Indian Institute Of Technology Indore
+    </h1>
+    <br>
+    <h2> Time Table</h2>
+    <div id="time-table">
+        <p>Academic Branch:
+            <br>
+            <select name="academic branch" id="academic-branch" onchange="myFunction(this)" required>
+                <option value="">--select a branch--</option>
+                <option value="CSE">CSE</option>
+                <option value="EE">EE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                <option value="MEMS">MEMS</option>
+            </select>
+        </p>
+        </div>
+           <br>
+        <table id="CSE-1" style="display: none;" class="hdata-table"> 
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>L: CS 204</td>
+                <td>L: CS 202</td>
+                <td>L: CS 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: CS 254 </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="CSE1" style="display: none;" class="vdata-table"> 
+        <tr>
+            <th>Day</th>
+            <td>Mon</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: CS 204</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: CS 202</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: CS 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: CS 254</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>   
+        <tr>
+            <th>16.30-17.25</th> </tr>          
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CSE-2" style="display: none;" class="hdata-table" >
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>L: CS 206</td>
+                <td>L: CS 204</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="2">P : MA 204CS </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="CSE2" style="display: none;" class="vdata-table" >
+            <tr>
+                <th>Day</th>
+                <td>Tue</td> </tr>
+            <tr>
+                <th>Room No.</th>
+                <td>L-21</td> </tr>
+            <tr>
+                <th>8.30-9.25</th>
+                <td>&nbsp</td> </tr>
+            <tr>
+                <th>9.30-10.25</th>
+                <td>&nbsp</td> </tr>
+            <tr>
+                <th>10.30-11.25</th>
+                <td>L: CS 206</td> </tr>
+             <tr>
+                <th>11.30-12.25</th>
+                <td>L: CS 204</td> </tr>
+            <tr>
+                <th>12.30-13.25</th>
+                <td>Lunch Break</td> </tr>
+            <tr>
+                <th>13.30-14.25</th>
+                <td>&nbsp</td> </tr>
+            <tr>
+                <th>14.30-15.25</th>
+                <td rowspan="2">P : MA 204CS</td> </tr>
+            <tr>
+                <th>15.30-16.25</th></tr>
+                    
+            <tr>
+                <th>16.30-17.25</th>
+                <td >&nbsp</td> </tr>
+            <tr>
+                <th>17.30-18.25</th>
+                <td>&nbsp</td> </tr>
+            <tr>
+                <th>18.30-19.25</th>
+                <td>&nbsp</td> </tr>
+                </table>
+    
+        <table id="CSE-3" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>L: CS 206</td>
+                <td>L: CS 202</td>
+                <td>For Public Lecture</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: CS 256 </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="CSE3" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Wed</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: CS 206</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: CS 202</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>For Public Lecture</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>    
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: CS 256</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>          
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+ 
+        
+    
+        <table id="CSE-4" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>T: CS 206</td>
+                <td>L: CS 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            
+            </tr>
+        </table>
+        <table id="CSE4" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Thu</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: CS 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: CS 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CSE-5" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>L-21</td>
+                <td>T: CS 334/434/634
+                    (L-31)</td>
+                <td>T: CS 204</td>
+                <td>T: CS 208</td>
+                <td>T: CS 202</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: CS 258 </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+               
+            </tr>
+        </table>
+        <table id="CSE5" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Fri</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>T: CS 334/434/634
+                (L-31)</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>T: CS 204</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: CS 208</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>T: CS 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: CS 258</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CSE-6" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+
+            </tr>
+        </table>
+        <table id="CSE6" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sat</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CSE-7" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="CSE7" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sun</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-1" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>L: EE 206</td>
+                <td>L: EE 202</td>
+                <td>L: EE 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="4"> P: EE 256 (E2) (4 hr.)
+                    P: EE 258 (E1) (3 hr.)</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="EE1" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Mon</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: EE 206</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: EE 202</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: EE 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="4"> P: EE 256 (E2) (4 hr.)
+                P: EE 258 (E1) (3 hr.)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+             <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th> </tr>  
+                                       
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-2" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>L: EE 204</td>
+                <td>L: EE 206</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td> 
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="EE2" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Tue</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: EE 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: EE 206</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-3" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>L: EE 204</td>
+                <td>L: EE 202</td>
+                <td>For Public Lecture</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="4">P: EE 254 (E2) (3 hr)
+                    P: EE 256 (E1) (4 hr) </td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="EE3" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Wed</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: EE 204</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: EE 202</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>For Public Lecture</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="4">P: EE 254 (E2) (3 hr)
+                P: EE 256 (E1) (4 hr)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th> </tr>                  
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-4" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>L: EE 202</td>
+                <td>L: EE 204</td>
+                <td>L: EE 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="2">P : MA 204EE </td>
+                <td colspan="2">P : MA 204ME</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="EE4" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Thu</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: EE 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: EE 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: EE 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="2">P : MA 204EE</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th>
+            <td rowspan="2">P : MA 204ME</td> </tr>
+        <tr>
+            <th>17.30-18.25</th> </tr>  
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-5" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>T: EE 206</td>
+                <td>T: EE 208</td>
+                <td>T: EE 202</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table >
+        <table id="EE5" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Fri</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>T: EE 206</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: EE 208</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>T: EE 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+        <table id="EE-6" style="display: none;" class="hdata-table">
+    
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="EE6" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sat</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="EE-7" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>L-11</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="EE7" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sun</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-11</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="ME-1" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>L: ME 208</td>
+                <td>L: ME 206</td>
+                <td>L: ME 202</td>
+                <td>Lunch Break</td>
+                <td>L: HS 213</td>
+                <td colspan="3"> P: ME 254 (M2)
+                    P: ME 258 (M1)</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+               
+            </tr>
+        </table>
+        <table id="ME1" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Mon</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: ME 208</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: ME 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: ME 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>L: HS 213</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3"> P: ME 254 (M2)
+                P: ME 258 (M1)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+      
+        <table id="ME-2" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>L: ME 202</td>
+                <td>L: ME 204</td>
+                <td>L: ME 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: ME 258 (M3) </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="ME2" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Tue</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: ME 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: ME 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: ME 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: ME 258 (M3)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="ME-3" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>L-21</td>
+                <td>&nbsp</td>
+                <td>L: ME 204</td>
+                <td>L: ME 206</td>
+                <td>For Public Lecture</td>
+                <td>Lunch Break</td>
+                <td>L: HS 213</td>
+                <td colspan="3"> P: ME 254 (M1)</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+               
+            </tr>
+        </table>
+        <table id="ME3" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Wed</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-21</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: ME 204</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: ME 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>For Public Lecture</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>L: HS 213</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3"> P: ME 254 (M1)></td> </tr>
+         <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="ME-4" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>L: ME 206</td>
+                <td>L: ME 204</td>
+                <td>L: ME 202</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="ME4" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Thu</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: ME 206</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: ME 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: ME 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="ME-5" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>T: ME 208</td>
+                <td>T: ME 202</td>
+                <td>T: ME 206</td>
+                <td>Lunch Break</td>
+                <td>T: HS 213</td>
+                <td colspan="3">P: ME 258 (M2) </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="ME5" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Fri</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>T: ME 208</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: ME 202</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>T: ME 206</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>T: HS 213</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: ME 258 (M2)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="ME-6" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="ME6" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sat</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+     
+        <table id="ME-7" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>L-03</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="ME7" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sun</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-03</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-1" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>L: CE 202</td>
+                <td>L: CE 206</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>L: AA 204</td>
+                <td colspan="2" >P : MA 204CE</td>
+                <td colspan="2"> P : MA 204MM</td>
+                <td>&nbsp</td>
+               
+                
+            </tr>
+        </table>
+        <table id="CE1" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Mon</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: CE 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: CE 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>L: AA 204</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="2" >P : MA 204CE</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th>
+            <td rowspan="2" >P : MA 204MM</td> </tr>
+        <tr>
+            <th>17.30-18.25</th> </tr>  
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-2" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>L: CE 208</td>
+                <td>L: CE 204</td>
+                <td>L: CE 202</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: CE 254 (CE1) (2 hr.)
+                    P: CE 256 (CE2) (3 hr.) </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                
+            </tr>
+        </table>
+        <table id="CE2" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Tue</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: CE 208</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: CE 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: CE 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: CE 254 (CE1) (2 hr.)
+                P: CE 256 (CE2) (3 hr.) </td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-3" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>L: CE 204</td>
+                <td>L: CE 206</td>
+                <td>For Public Lecture</td>
+                <td>Lunch Break</td>
+                <td>L: AA 204</td>
+                <td colspan="3">P: CE 254 (CE2) (2 hr.)
+                    P: CE 256 (CE1) (3 hr.) </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+              
+            </tr>
+        </table>
+        <table id="CE3" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Wed</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: CE 204</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: CE 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>For Public Lecture</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>L: AA 204</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: CE 254 (CE2) (2 hr.)
+                P: CE 256 (CE1) (3 hr.)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-4" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>T: CE 204</td>
+                <td>L: CE 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="CE4" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Thu</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: CE 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: CE 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-5" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>T: CE 202</td>
+                <td>T: CE 208</td>
+                <td>T: CE 206</td>
+                <td>Lunch Break</td>
+                <td>T: AA 204</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="CE5" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Fri</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>T: CE 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: CE 208</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>T: CE 206</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>T: AA 204</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+        
+
+    
+        <table id="CE-6" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="CE6" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sat</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="CE-7" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>L-23</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="CE7" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sun</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-23</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-1" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>L: MM 202</td>
+                <td>L: MM 208</td>
+                <td>L: MM 204</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS1" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Mon</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: MM 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: MM 208</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: MM 204</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-2" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>L: MM 206</td>
+                <td>L: MM 202</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS2" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Tue</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-14</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: MM 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: MM 202</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-3" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>L: MM 206</td>
+                <td>L: MM 208</td>
+                <td>For Public Lecture</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS3" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Wed</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>L: MM 206</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>L: MM 208</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>For Public Lecture</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-4" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>T: MM 206</td>
+                <td>L: MM 204</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS4" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Thu</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: MM 206</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>L: MM 204</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-5" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>T: MM 202</td>
+                <td>T: MM 204</td>
+                <td>T: MM 208</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td colspan="3">P: MM 254 (M1)
+                    P: MM 258 (M2)</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS5" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Fri</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>T: MM 202</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>T: MM 204</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>T: MM 208</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td rowspan="3">P: MM 254 (M1)
+                P: MM 258 (M2)</td> </tr>
+        <tr>
+            <th>15.30-16.25</th> </tr>  
+        <tr>
+            <th>16.30-17.25</th> </tr>  
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+    
+        <table id="MEMS-6" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS6" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sat</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+            </table>
+ 
+        <table id="MEMS-7" style="display: none;" class="hdata-table">
+            <tr>
+               <th> Day</th>
+               <th> Room No.</th>
+               <th> 8.30-9.25</th>
+               <th> 9.30-10.25</th>
+               <th> 10.30-11.25</th>
+               <th> 11.30-12.25</th>
+               <th> 12.30-13.25</th>
+               <th> 13.30-14.25</th>
+               <th> 14.30-15.25</th>
+               <th> 15.30-16.25</th>
+               <th> 16.30-17.25</th>
+               <th> 17.30-18.25</th>
+               <th> 18.30-19.25</th>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>L-13</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>Lunch Break</td>
+                <td>&nbsp</td>
+                <td>&nbsp </td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
+        <table id="MEMS7" style="display: none;" class="vdata-table">
+        <tr>
+            <th>Day</th>
+            <td>Sun</td> </tr>
+        <tr>
+            <th>Room No.</th>
+            <td>L-13</td> </tr>
+        <tr>
+            <th>8.30-9.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>9.30-10.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>10.30-11.25</th>
+            <td>&nbsp</td> </tr>
+         <tr>
+            <th>11.30-12.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>12.30-13.25</th>
+            <td>Lunch Break</td> </tr>
+        <tr>
+            <th>13.30-14.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>14.30-15.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>15.30-16.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>16.30-17.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>17.30-18.25</th>
+            <td>&nbsp</td> </tr>
+        <tr>
+            <th>18.30-19.25</th>
+            <td>&nbsp</td></tr>
+        </table>
+
+   </div> 
+    
+</body>
+</html>

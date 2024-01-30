@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+
+html{  
+    /* border: 5px solid rgb(217, 204, 204);*/
+     border-radius: 5px;
+     border-width: 1px;
+     padding:50px;
+ }
+
+ body{
+    /*background-image: url("Screenshot 2024-01-30 171905.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin: 1px 3px;
+    padding:2px;
+  
+    
+}
+.container {
+    background-color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    width:100%
+
+}
+
+ div{  
+    /* border: 5px solid rgb(217, 204, 204);*/
+     border-radius: 5px;
+     border-width: 1px;
+     /*padding:10px;*/
+ }
+
+.logo{
+    width:100px;
+}
+
+h1{ padding-top: 50px;
+    text-align: center;
+    color:black;font-weight: 1000;font-size:50px ;
+    font-style:normal;
+    border-bottom: solid 3px lightgrey;
+    border-radius: 10px;
+    margin:auto;
+}
+
+h2{ 
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    padding: 5px 5px 5px 1px;
+    border-bottom: solid 3px lightgrey;
+    border-radius: 10px;
+    margin:auto;
+    
+}
+p{  text-align: center;
+    /* padding-left:100px;*/
+    padding-top: 0px;
+    color:black;font-weight: 100;font-size:30px ;
+    
+}
+#academic-branch{
+    width:auto;
+    border-radius: 5px;
+    color:black;font-weight: 100;font-size:20px ;
+
+}
+table{
+   
+    border-collapse:separate;
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+th,td {
+    align-items: center;
+    border:solid;
+    border-color:black;   
+    border-width: 1px;
+    max-width:100px ;   
+    padding:10px;
+
+}
+
+  @media (max-width: 600px) {
+    h1,h2{ 
+        
+        font-weight: 100;font-size:20px ;
+    }
+        
+        p,#academic-branch{ 
+            
+            font-size: 20px;
+        }
+        div{
+   
+            font-size: 10px;
+        }
+        .hdata-table {
+            display:none;
+            
+        
+        }
+        .logo{
+            width:10%;
+        }
+        /*body{
+            background-image: url("Screenshot 2024-01-30 173616.png");
+            background-repeat: no-repeat;}*/
+                
+                }
+        
+  
+  @media (min-width: 600px) {
+    
+    .vdata-table {
+        display:none;
+        height:50px;
+    
+    }
+    
+        
+        }
+        @media (max-width: 1000px) and (min-width: 600px) {
+            th,td{
+                font-size: 9px;
+                padding:5px;
+                height:50px;
+            }
+            h1,h2{ 
+        
+                font-weight: 10000;font-size:30px ;
+            }
+                
+                p,#academic-branch{ 
+                    
+                    font-size: 20px;
+                }
+                div{
+           
+                    font-size: 10px;
+                }
+               
+                .logo{
+                    width:10%;
+        }
