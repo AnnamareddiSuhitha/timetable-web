@@ -3,16 +3,12 @@
   }
 
 html{  
-    /* border: 5px solid rgb(217, 204, 204);*/
      border-radius: 5px;
      border-width: 1px;
      padding:50px;
  }
 
  body{
-    /*background-image: url("Screenshot 2024-01-30 171905.png");
-    background-repeat: no-repeat;
-    background-size: cover;*/
     margin: 1px 3px;
     padding:2px;
   
@@ -28,10 +24,8 @@ html{
 }
 
  div{  
-    /* border: 5px solid rgb(217, 204, 204);*/
      border-radius: 5px;
      border-width: 1px;
-     /*padding:10px;*/
  }
 
 .logo{
@@ -58,7 +52,6 @@ h2{
     
 }
 p{  text-align: center;
-    /* padding-left:100px;*/
     padding-top: 0px;
     color:black;font-weight: 100;font-size:30px ;
     
@@ -112,11 +105,6 @@ th,td {
         .logo{
             width:10%;
         }
-        /*body{
-            background-image: url("Screenshot 2024-01-30 173616.png");
-            background-repeat: no-repeat;}*/
-                
-                }
         
   
   @media (min-width: 600px) {
